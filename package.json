@@ -1,0 +1,22 @@
+{
+  "name": "backend-repo-p12-innovate-infinity",
+  "version": "1.0.0",
+  "description": "Bacend for wander solo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pesto-students/backend-repo-p12-innovate-infinity.git"
+  },
+  "author": "sachin,rheeturaj,shubham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pesto-students/backend-repo-p12-innovate-infinity/issues"
+  },
+  "homepage": "https://github.com/pesto-students/backend-repo-p12-innovate-infinity#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
