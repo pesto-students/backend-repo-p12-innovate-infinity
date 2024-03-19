@@ -13,8 +13,8 @@ const db = {};
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-db.journey = journey(Sequelize, sequelize);
-db.user = user(Sequelize, sequelize);
-db.post = post(Sequelize, sequelize);
+db.journey = journey(sequelize, Sequelize);
+db.user = user(sequelize, Sequelize);
+db.post = post(sequelize, Sequelize);
 
 export default db;
