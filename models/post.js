@@ -5,7 +5,7 @@ export const post = (sequelize, Sequelize) => {
       primaryKey: true,
       autoIncrement: true,
     },
-    userid: {
+    userIdFK: {
       type: Sequelize.INTEGER,
       allowNull: false,
     },
@@ -21,7 +21,7 @@ export const post = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
       allowNull: true,
     },
-    name: {
+    title: {
       type: Sequelize.STRING,
       allowNull: true,
     },

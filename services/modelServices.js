@@ -69,3 +69,7 @@ class ModelClass {
         }
     }
 }
+
+export const userService = new ModelClass("user");
+export const journeyService = new ModelClass("journey");
+export const postService = new ModelClass("post");
