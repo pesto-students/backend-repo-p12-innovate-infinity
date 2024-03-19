@@ -5,16 +5,16 @@ export const journey = (sequelize, Sequelize) => {
       primaryKey: true,
       autoIncrement: true,
     },
-    userId: {
+    userIdFK: {
       type: Sequelize.INTEGER,
       allowNull: false,
     },
     startDate: {
-      type: Sequelize.DATEONLY,
+      type: Sequelize.DATE,
       allowNull: false,
     },
     endDate: {
-      type: Sequelize.DATEONLY,
+      type: Sequelize.DATE,
       allowNull: false,
     },
     location: {
@@ -36,12 +36,6 @@ export const journey = (sequelize, Sequelize) => {
     title: {
       type: Sequelize.STRING,
       allowNull: true,
-    },
-
-    // what is this for ?
-    date: {
-      type: Sequelize.DATE,
-      allowNull: false,
     },
     tags: {
       type: Sequelize.STRING,

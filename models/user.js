@@ -17,13 +17,14 @@ export const user = (sequelize, Sequelize) => {
         isEmail: true,
       },
     },
-    mobile: {
+    phone: {
       type: Sequelize.STRING,
       allowNull: false,
+      unique: true,
     },
     dob: {
       type: Sequelize.DATEONLY,
-      allowNull: false,
+      allowNull: true,
     },
     bio: {
       type: Sequelize.TEXT,

@@ -2,6 +2,9 @@ import Express from "express";
 import * as dotenv from "dotenv";
 import db from "./dbConfig.js";
 import authHandler from "./handlers/auth.js";
+import postHandler from "./handlers/post.js";
+import journeyHandler from "./handlers/journey.js";
+import userHandler from "./handlers/user.js";
 import Sentry from "@sentry/node";
 import { nodeProfilingIntegration } from "@sentry/profiling-node";
 
@@ -33,6 +36,9 @@ db.sequelize
   .catch((err) => console.log("Failed to sync db" + err));
 
 app.use("/auth", authHandler);
+app.use("/journey", journeyHandler);
+app.use("/post", postHandler);
+app.use("/user", userHandler);
 
 app.get("/*", async (req, res) => {
   res.status(404).json({ msg: "route not found" });
